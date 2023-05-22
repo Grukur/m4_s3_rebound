@@ -1,0 +1,30 @@
+.backgroundOwn {
+  background: rgb(0,129,1);
+  background: -moz-linear-gradient(84deg, rgba(0,129,1,1) 0%, rgba(186,0,0,1) 100%);
+  background: -webkit-linear-gradient(84deg, rgba(0,129,1,1) 0%, rgba(186,0,0,1) 100%);
+  background: linear-gradient(84deg, rgba(0,129,1,1) 0%, rgba(186,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008101",endColorstr="#ba0000",GradientType=1);
+}
+
+.buttonSend {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.borderTip {
+  border: solid;
+  border-color: #e9e9e9;
+  border-radius: 35px;
+}
+
+h4 {
+  border-radius: 35px;
+  background-color: #e9e9e9;
+}
+
+.noBorder {
+  border: none;
+}
+
+

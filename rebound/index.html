@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- moment -->
+    <script defer src="./assets/vendors/moment.js"></script>
+    <!-- Script of own -->
+    <script defer src="./assets/js/script.js"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Icon -->
+    <link rel="icon" href="./assets/img/worker.png">
+    <title>Rebound m3 s5</title>
+</head>
+
+<body class="backgroundOwn m-5">
+    <div class="container bg-light p-3">
+        <div class="row">
+            <div class="col-6">
+                <h4 class="borderTip p-2">MEJORA TU PIZZA</h4>
+                <h5>Puede elegir 3 ingredientes gratis, Cada ingrediente adicional cuesta $800</h5>
+                <h5 class="my-3">Ingredientes disponibles para agregar a su pizza</h5>
+                <div class="">
+                    <ul class="list-group">
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Carne" id="Carne">
+                            <h5 class="form-check-label">Carne</h5>
+                        </li>
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Pollo" id="Pollo">
+                            <h5 class="form-check-label">Pollo</h5>
+                        </li>
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Tocino" id="Tocino">
+                            <h5 class="form-check-label" >Tocino</h5>
+                        </li>         <li class="d-flex">
+                        <input class="form-check-input me-1 border-dark" type="checkbox" value="Mozzarella" id="Mozzarella">
+                        <h5 class="form-check-label" >Mozzarella</h5>
+                        </li>
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Champiñon" id="Champiñon">
+                            <h5 class="form-check-label" >Champiñon</h5>
+                        </li>
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Cebolla" id="Cebolla">
+                            <h5 class="form-check-label" >Cebolla</h5>
+                        </li>
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Piña" id="Piña">
+                            <h5 class="form-check-label" >Piña</h5>
+                        </li>
+                        <li class="d-flex">
+                            <input class="form-check-input me-1 border-dark" type="checkbox" value="Pimentón" id="Pimentón">
+                            <h5 class="form-check-label" >Pimentón</h5>
+                        </li>
+                    </ul>
+                </div>
+            <div>
+                <h5 class="my-3">Los ingredientes seleccionados son:</h5>
+                <h5 id="bIngridients"></h5>
+            </div>
+            <div>
+                <h5>Los ingredientes <a class="fw-bold">extras</a> seleccionados son:</h5>
+                <h5 id="eIngridients"></h5>
+            </div>
+        </div>
+        <div class="col-6">
+            <h4 class="borderTip p-2">RESUMEN DEL PEDIDO</h4>
+            <div class="d-flex justify-content-between">
+                <h5>Pizza XL</h5>
+                <h5 class="fw-bold">$15.000</h5>
+                
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <h5>Ingredientes Extras</h5>
+                <h5 id="extraCash" class="fw-bold"></h5>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <h5>Propina</h5>
+                <h5 id="tip" class="fw-bold"></h5>
+            </div>
+            <hr>
+            <div class="d-flex borderTip p-3">
+                <input id="tipInput" class="noBorder w-50" type="text" onkeyup="keyPress()" onmouseenter="start()" placeholder="Ingresa Propina">
+                <button class="buttonSend w-50">Enviar Pedido con Propina</button>
+            </div>          
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
